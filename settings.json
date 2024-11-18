@@ -1,0 +1,31 @@
+{
+    "workbench.colorTheme": "Tokyo Night",
+    "window.titleBarStyle": "custom",
+    "editor.minimap.enabled": false,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "vim.useSystemClipboard": true,
+    "vim.easymotion": true,
+    "vim.smartRelativeLine": true,
+    "vim.sneak": true,
+    "vim.useCtrlKeys": false,
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        { "before": ["<S-h>"], "commands": [":bprevious"] },
+        { "before": ["<S-l>"], "commands": [":bnext"] },
+        { "before": ["s"], "commands": ["leap.findForward"]},
+        { "before": ["S"], "commands": ["leap.findBackward"]},
+        { "before": ["leader", "c", "a"], "commands": ["editor.action.quickFix"] },
+        { "before": ["leader", "c", "r"], "commands": ["editor.action.rename"] },
+        { "before": ["leader", "c", "o"], "commands": ["editor.action.organizeImports"] },
+        { "before": ["leader", "c", "f"], "commands": ["editor.action.formatDocument"] },
+        { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+        { "before": ["leader", "s", "g"], "commands": ["workbench.action.findInFiles"] },
+        { "before": ["leader", "s", "s"], "commands": ["workbench.action.gotoSymbol"] },
+        { "before": ["leader", "s", "S"], "commands": ["workbench.action.showAllSymbols"] },
+        { "before": ["leader", "s", "r"], "commands": ["editor.action.startFindReplaceAction"] },
+        { "before": ["g", "I"], "commands": ["editor.action.goToImplementation"] },
+        { "before": ["g", "r"], "commands": ["editor.action.goToReferences"] },
+    ]
+}
