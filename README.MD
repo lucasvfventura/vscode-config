@@ -1,5 +1,4 @@
-# Visual Studio Code Configarion
+# Visual Studio Code Configuration
 
 ## Required plugins
 https://marketplace.visualstudio.com/items?itemName=vscodevim.vim
-https://marketplace.visualstudio.com/items?itemName=MurlocCra4ler.leap
