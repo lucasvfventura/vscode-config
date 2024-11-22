@@ -1,21 +1,23 @@
 {
-    "workbench.colorTheme": "Tokyo Night",
-    "window.titleBarStyle": "custom",
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.iconTheme": "catppuccin-mocha",
+    "windsurf.autocompleteSpeed": "fast",
     "editor.minimap.enabled": false,
+    "editor.stickyScroll.enabled": false,
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
+    "window.zoomLevel": 0.3,
+    "editor.fontSize": 13,
     "vim.useSystemClipboard": true,
     "vim.easymotion": true,
     "vim.smartRelativeLine": true,
-    "vim.sneak": true,
     "vim.useCtrlKeys": false,
     "vim.leader": "<space>",
     "vim.normalModeKeyBindingsNonRecursive": [
         { "before": ["<S-h>"], "commands": [":bprevious"] },
         { "before": ["<S-l>"], "commands": [":bnext"] },
-        { "before": ["s"], "commands": ["leap.findForward"]},
-        { "before": ["S"], "commands": ["leap.findBackward"]},
+        { "before": ["s"], "after": ["leader", "leader", "/"] },
         { "before": ["leader", "c", "a"], "commands": ["editor.action.quickFix"] },
         { "before": ["leader", "c", "r"], "commands": ["editor.action.rename"] },
         { "before": ["leader", "c", "o"], "commands": ["editor.action.organizeImports"] },
@@ -25,7 +27,9 @@
         { "before": ["leader", "s", "s"], "commands": ["workbench.action.gotoSymbol"] },
         { "before": ["leader", "s", "S"], "commands": ["workbench.action.showAllSymbols"] },
         { "before": ["leader", "s", "r"], "commands": ["editor.action.startFindReplaceAction"] },
+        { "before": ["leader", "a", "c"], "commands": ["windsurf.prioritized.command.open"] },
+        { "before": ["leader", "a", "a"], "commands": ["windsurf.prioritized.chat.open"] },
         { "before": ["g", "I"], "commands": ["editor.action.goToImplementation"] },
         { "before": ["g", "r"], "commands": ["editor.action.goToReferences"] },
-    ]
+    ],
 }
